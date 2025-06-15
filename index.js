@@ -97,7 +97,43 @@ function deleteWord(){
       autoplaySpeed: 2000,
       prev: prevArrow,
       next: nextArrow,
+       responsive: [
+    {
+      breakpoint: 900, // планшеты
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 570, // телефоны
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
     });
+
+$('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 768, // планшеты
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480, // телефоны
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
 
         
  let modal = document.querySelector('#modal-window-one');

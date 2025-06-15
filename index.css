@@ -204,7 +204,7 @@ ul{
 } */
 
 
- @media(max-width:1000px){
+ @media(max-width:1024px){
     #nav{
         position: fixed;
         display: flex;
@@ -248,7 +248,7 @@ ul{
     } */
 
     .hero{
-        height: 20px;
+        height: 40px;
     }
     #nav{
         position: fixed;
@@ -263,9 +263,9 @@ ul{
         /* left: -320px; */
         width: 100%;
         /* -webkit-box-sizing: border-box;/ */
-        box-sizing: border-box;
-        height: 20px;
-        padding: 10px;
+        /* box-sizing: border-box; */
+        height: 40px;
+        padding: 10px;   
 }    
 
  
@@ -276,14 +276,25 @@ ul{
     }
     #nav .resto-menu li{
         float: none;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
     
 }
     .resto-menu li a{
         font-size: 12px;
+    
     }
-   
+  
+}
+
+@media(max-width:600px){
+    .hero{
+        height: 45px;    
+    }
+  
+    .resto-menu li a {
+        font-size: 7px;
+    }
 }
 
 .header_logo{
@@ -413,6 +424,13 @@ box-shadow: 17px 17px 23px -1px rgba(34, 60, 80, 0.2) inset;
     }
     .why-us h2{
         font-size: large;
+    }
+
+    .about-content{
+        display: block;
+    }
+    .portret{
+        padding-top: 20px;
     }
   }
   
@@ -713,6 +731,8 @@ box-shadow: 17px 17px 23px -1px rgba(34, 60, 80, 0.2) inset;
     display: none;
 }
 
+
+
 @media(max-width:1000px){
     .feature-item{
         width: calc(25% - 10px);
@@ -749,13 +769,26 @@ box-shadow: 17px 17px 23px -1px rgba(34, 60, 80, 0.2) inset;
     }
 }
 
+@media (max-width: 1000px) {
+  .slider {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .slick-slide img {
+    max-height: 80vh; /* чтобы не переливало экран */
+    object-fit: cover;
+  }
+}
+
 @media(max-width:550px){
 
-    .feature-item:nth-child(3){
+    .feature-item:nth-child(3), .feature-item:nth-child(4){
         display: none;
     }
     .feature-item{
-        width: calc(50% - 20px);
+        margin: 5px;
+        width: calc(50% - 30px);
     }
 }
 
@@ -868,6 +901,16 @@ box-shadow: 17px 17px 23px -1px rgba(34, 60, 80, 0.2) inset;
   .sticky-instagram img{
     width: 60px;
   }
+
+@media (max-width: 600px){
+    .sticky-whatsapp{
+        top: calc(100% - 100px);
+    }
+    .sticky-instagram{
+        top: calc(100% - 50px);
+    }
+} 
+  
 
   .circle {
   width: 8px;
