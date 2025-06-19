@@ -891,13 +891,12 @@ box-shadow: 17px 17px 23px -1px rgba(34, 60, 80, 0.2) inset;
 
 .close-btn{
     position: absolute;
-    top: 40px;
+    top: 30px;
     right: 20px;
     background-color: #879E82;
     border: none;
-    outline: none;
-    font-size: 20px;
 }
+
 
 .open{
     display: flex !important;
